@@ -1,3 +1,5 @@
 Hello World!
 
+right click on a commit and select revert.
+
 Before you make a commit to your local repository where is it?
