@@ -1,0 +1,1 @@
+Right click on "x changed files" to select stash all changes. Can also delete changes.
