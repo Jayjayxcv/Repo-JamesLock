@@ -1,0 +1,136 @@
+{
+	"connections": [
+		{
+			"from": "tiler",
+			"from_port": 0,
+			"to": "colorize",
+			"to_port": 0
+		},
+		{
+			"from": "colorize",
+			"from_port": 0,
+			"to": "Material",
+			"to_port": 0
+		},
+		{
+			"from": "shape",
+			"from_port": 0,
+			"to": "tiler",
+			"to_port": 0
+		}
+	],
+	"label": "Graph",
+	"longdesc": "",
+	"name": "@Node@817",
+	"node_position": {
+		"x": 0.0,
+		"y": 0.0
+	},
+	"nodes": [
+		{
+			"export_paths": {
+
+			},
+			"name": "Material",
+			"node_position": {
+				"x": 433.649963378906,
+				"y": 39.2303695678711
+			},
+			"parameters": {
+				"albedo_color": {
+					"a": 1.0,
+					"b": 1.0,
+					"g": 1.0,
+					"r": 1.0,
+					"type": "Color"
+				},
+				"ao": 1.0,
+				"depth_scale": 0.5,
+				"emission_energy": 1.0,
+				"flags_transparent": true,
+				"metallic": 0.58,
+				"normal": 1.0,
+				"roughness": 0.3,
+				"size": 11,
+				"sss": 1.0
+			},
+			"seed_int": 0,
+			"type": "material"
+		},
+		{
+			"name": "shape",
+			"node_position": {
+				"x": -123.249992370605,
+				"y": 35.6929092407227
+			},
+			"parameters": {
+				"edge": 0.0,
+				"radius": 0.09,
+				"shape": 1.0,
+				"sides": 3.0
+			},
+			"seed_int": 0,
+			"type": "shape"
+		},
+		{
+			"name": "tiler",
+			"node_position": {
+				"x": 42.2000122070312,
+				"y": 39.7409019470215
+			},
+			"parameters": {
+				"fixed_offset": 0.0,
+				"inputs": 0.0,
+				"offset": 1.0,
+				"overlap": 2.0,
+				"rotate": 180.0,
+				"scale": "{\"connections\":[{\"from\":\"tiler\",\"from_node\":\"node_tiler\",\"from_port\":0,\"keep_alive\":false,\"to\":\"colorize\",\"to_node\":\"node_colorize\",\"to_port\":0},{\"from\":\"colorize\",\"from_node\":\"node_colorize\",\"from_port\":0,\"keep_alive\":false,\"to\":\"Material\",\"to_node\":\"node_Material\",\"to_port\":0},{\"from\":\"shape\",\"from_node\":\"node_shape\",\"from_port\":0,\"keep_alive\":false,\"to\":\"tiler\",\"to_node\":\"node_tiler\",\"to_port\":0}],\"nodes\":[{\"name\":\"tiler\",\"node_position\":{\"x\":-197.899978637695,\"y\":-98.3782043457031},\"parameters\":{\"fixed_offset\":0.0,\"inputs\":0.0,\"offset\":1.0,\"overlap\":2.0,\"rotate\":180.0,\"scale\":0.25,\"scale_x\":1.0,\"scale_y\":1.0,\"tx\":16.0,\"ty\":16.0,\"value\":1.0,\"variations\":false},\"seed_int\":0,\"type\":\"tiler\"},{\"name\":\"shape\",\"node_position\":{\"x\":-363.349975585938,\"y\":-102.426200866699},\"parameters\":{\"edge\":0.0,\"radius\":0.09,\"shape\":1.0,\"sides\":3.0},\"seed_int\":0,\"type\":\"shape\"},{\"name\":\"colorize\",\"node_position\":{\"x\":23.1999969482422,\"y\":-97.3068237304688},\"parameters\":{\"gradient\":{\"interpolation\":1,\"points\":[{\"a\":1.0,\"b\":0.263710021972656,\"g\":0.435546875,\"pos\":0.105482261599475,\"r\":0.3456010222435},{\"a\":1.0,\"b\":0.0897102355957031,\"g\":0.348804235458374,\"pos\":1.0,\"r\":0.392578125}],\"type\":\"Gradient\"}},\"seed_int\":0,\"type\":\"colorize\"},{\"export_paths\":{},\"name\":\"Material\",\"node_position\":{\"x\":193.54997253418,\"y\":-98.8887405395508},\"parameters\":{\"albedo_color\":{\"a\":1.0,\"b\":1.0,\"g\":1.0,\"r\":1.0,\"type\":\"Color\"},\"ao\":1.0,\"depth_scale\":0.5,\"emission_energy\":1.0,\"flags_transparent\":true,\"metallic\":0.58,\"normal\":1.0,\"roughness\":0.3,\"size\":11,\"sss\":1.0},\"seed_int\":0,\"type\":\"material\"}]}",
+				"scale_x": 1.0,
+				"scale_y": 1.0,
+				"tx": 16.0,
+				"ty": 16.0,
+				"value": 1.0,
+				"variations": false
+			},
+			"seed_int": 0,
+			"type": "tiler"
+		},
+		{
+			"name": "colorize",
+			"node_position": {
+				"x": 263.299987792969,
+				"y": 40.8122901916504
+			},
+			"parameters": {
+				"gradient": {
+					"interpolation": 1,
+					"points": [
+						{
+							"a": 1.0,
+							"b": 0.263710021972656,
+							"g": 0.435546875,
+							"pos": 0.105482261599475,
+							"r": 0.3456010222435
+						},
+						{
+							"a": 1.0,
+							"b": 0.0897102355957031,
+							"g": 0.348804235458374,
+							"pos": 1.0,
+							"r": 0.392578125
+						}
+					],
+					"type": "Gradient"
+				}
+			},
+			"seed_int": 0,
+			"type": "colorize"
+		}
+	],
+	"parameters": {
+
+	},
+	"seed_int": 0,
+	"shortdesc": "",
+	"type": "graph"
+}

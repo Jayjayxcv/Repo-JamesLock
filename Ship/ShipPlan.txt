@@ -1,0 +1,10 @@
+Bridge
+Common area
+Kitchen
+Barracks
+medical bay
+life support
+reactor bay
+Engine room
+Docking bay
+storehouse
